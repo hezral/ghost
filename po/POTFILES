@@ -1,0 +1,7 @@
+data/com.github.hezral.ghosts.desktop.in
+data/com.github.hezral.ghosts.appdata.xml.in
+data/com.github.hezral.ghosts.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

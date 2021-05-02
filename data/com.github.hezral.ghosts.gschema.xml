@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="com.github.hezral.ghosts">
+	<schema id="com.github.hezral.ghosts" path="/com/github/hezral/ghosts/">
+	</schema>
+</schemalist>
