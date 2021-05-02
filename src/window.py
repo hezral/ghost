@@ -19,8 +19,8 @@ from gi.repository import Gtk
 
 
 @Gtk.Template(resource_path='/com/github/hezral/ghosts/window.ui')
-class ComGithubHezralGhostsWindow(Gtk.ApplicationWindow):
-    __gtype_name__ = 'ComGithubHezralGhostsWindow'
+class GhostsWindow(Gtk.ApplicationWindow):
+    __gtype_name__ = 'GhostsWindow'
 
     label = Gtk.Template.Child()
 

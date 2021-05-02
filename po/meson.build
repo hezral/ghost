@@ -1,1 +1,1 @@
-i18n.gettext('com.github.hezral.ghosts', preset: 'glib')
+i18n.gettext('ghosts', preset: 'glib')

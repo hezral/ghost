@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=com.github.hezral.ghosts
-Exec=com.github.hezral.ghosts
+Name=ghosts
+Exec=ghosts
 Terminal=false
 Type=Application
 Categories=GTK;

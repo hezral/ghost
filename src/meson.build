@@ -1,9 +1,9 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'com_github_hezral_ghosts')
+moduledir = join_paths(pkgdatadir, 'ghosts')
 gnome = import('gnome')
 
-gnome.compile_resources('com.github.hezral.ghosts',
-  'com_github_hezral_ghosts.gresource.xml',
+gnome.compile_resources('ghosts',
+  'ghosts.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -18,17 +18,17 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'com.github.hezral.ghosts.in',
-  output: 'com.github.hezral.ghosts',
+  input: 'ghosts.in',
+  output: 'ghosts',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
 )
 
-com_github_hezral_ghosts_sources = [
+ghosts_sources = [
   '__init__.py',
   'main.py',
   'window.py',
 ]
 
-install_data(com_github_hezral_ghosts_sources, install_dir: moduledir)
+install_data(ghosts_sources, install_dir: moduledir)

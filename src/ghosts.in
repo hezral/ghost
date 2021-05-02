@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# com.github.hezral.ghosts.in
+# ghosts.in
 #
 # Copyright 2021 Adi Hezral
 #
@@ -28,14 +28,14 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-gettext.install('com.github.hezral.ghosts', localedir)
+gettext.install('ghosts', localedir)
 
 if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'com.github.hezral.ghosts.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'ghosts.gresource'))
     resource._register()
 
-    from com_github_hezral_ghosts import main
+    from ghosts import main
     sys.exit(main.main(VERSION))

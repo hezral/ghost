@@ -3,7 +3,7 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "3.34",
     "sdk" : "org.gnome.Sdk",
-    "command" : "com.github.hezral.ghosts",
+    "command" : "ghosts",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -23,13 +23,13 @@
     ],
     "modules" : [
         {
-            "name" : "com.github.hezral.ghosts",
+            "name" : "ghosts",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/adi/Work/com.github.hezral.ghosts"
+                    "url" : "file:///home/adi/Projects/ghosts"
                 }
             ]
         }
