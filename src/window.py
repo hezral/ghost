@@ -26,8 +26,6 @@ class GhostsWindow(Handy.Window):
 
     Handy.init()
 
-    # label = Gtk.Template.Child()
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -39,8 +37,6 @@ class GhostsWindow(Handy.Window):
         label = Gtk.Label("Ghosts")
         label.props.expand = True
         label.props.valign = label.props.halign = Gtk.Align.CENTER
-
-
 
         grid = Gtk.Grid()
         grid.props.expand = True
