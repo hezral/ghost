@@ -129,5 +129,13 @@ dmypy.json
 .pyre/
 
 # Flatpak
-.flatpak-builder
-build-dir
+.flatpak-builder/
+build-dir/
+
+# Debian
+build/
+.debhelper/
+com.github.hezral.ghosts/
+*.debhelper.log
+*.substvars
+obj-*/
