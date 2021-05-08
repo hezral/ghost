@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 10),
 X-Python3-Version: >= 3.6.9
 Standards-Version: 3.9.3
 
-Package: com.github.hezral.clips
+Package: com.github.hezral.ghosts
 Architecture: any
 Depends: ${python3:Depends},
          ${misc:Depends},
