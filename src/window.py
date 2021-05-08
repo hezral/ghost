@@ -15,14 +15,40 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk
+import gi
+gi.require_version('Handy', '1')
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Handy, Gdk, Gio
 
-
-@Gtk.Template(resource_path='/com/github/hezral/ghosts/window.ui')
-class GhostsWindow(Gtk.ApplicationWindow):
+# @Gtk.Template(resource_path='/com/github/hezral/ghosts/window.ui')
+class GhostsWindow(Handy.Window):
     __gtype_name__ = 'GhostsWindow'
 
-    label = Gtk.Template.Child()
+    Handy.init()
+
+    # label = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+        header = Handy.HeaderBar()
+        header.props.show_close_button = True
+        header.props.hexpand = True
+        header.props.title = "HandyWindow"
+
+        label = Gtk.Label("Ghosts")
+        label.props.expand = True
+        label.props.valign = label.props.halign = Gtk.Align.CENTER
+
+
+
+        grid = Gtk.Grid()
+        grid.props.expand = True
+        grid.attach(header, 0, 0, 1, 1)
+        grid.attach(label, 0, 1, 1, 1)
+
+        self.add(grid)
+        self.show_all()
+        self.set_size_request(700, 450)
+        self.connect("destroy", Gtk.main_quit)
+
