@@ -3,11 +3,9 @@ Section: utils
 Priority: optional
 Maintainer: Adi Hezral <hezral@gmail.com>
 Build-Depends: 
-    debhelper (>= 10),
+    debhelper (>= 9),
     dh-python,
-    meson,
-    python3
-X-Python3-Version: >= 3.6.9
+    meson
 Standards-Version: 3.9.3
 
 Package: com.github.hezral.ghosts
