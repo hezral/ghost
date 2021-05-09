@@ -5,8 +5,6 @@ project('com.github.hezral.ghosts',
                    ],
 )
 
-dependency('libhandy-1', version: '>= 1.0.0')
-
 i18n = import('i18n')
 
 
