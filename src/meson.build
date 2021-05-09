@@ -19,7 +19,7 @@ conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
   input: 'ghosts.in',
-  output: 'ghosts',
+  output: meson.project_name(),
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
