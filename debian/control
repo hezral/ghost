@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Adi Hezral <hezral@gmail.com>
 Build-Depends: 
     debhelper (>= 10),
-    debhelper-compat (= 12),
     dh-python,
     meson,
     python3
