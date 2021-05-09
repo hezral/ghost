@@ -39,3 +39,9 @@ if compile_schemas.found()
     args: ['--strict', '--dry-run', meson.current_source_dir()]
   )
 endif
+
+install_data(
+    'icon.png',
+    install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', '128x128', 'apps'),
+    rename: meson.project_name() + '.png'
+)
