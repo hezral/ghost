@@ -1,13 +1,13 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 moduledir = join_paths(pkgdatadir, 'ghosts')
-gnome = import('gnome')
+# gnome = import('gnome')
 
-gnome.compile_resources('ghosts',
-  'ghosts.gresource.xml',
-  gresource_bundle: true,
-  install: true,
-  install_dir: pkgdatadir,
-)
+# gnome.compile_resources('ghosts',
+#   'ghosts.gresource.xml',
+#   gresource_bundle: true,
+#   install: true,
+#   install_dir: pkgdatadir,
+# )
 
 # python = import('python')
 
